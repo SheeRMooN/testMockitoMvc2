@@ -76,11 +76,6 @@ public class EmployeeControllerTestsWebMvc {
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk());
 
-//        this.mockMvc.perform(MockMvcRequestBuilders
-//                .delete("/api/foo/{id}", "11")
-//                .contentType(MediaType.APPLICATION_JSON))
-//                .accept(MediaType.APPLICATION_JSON))
-//            .andExpect(status().isOk());
     }
     @Test
     public void testDelete2()throws Exception{
@@ -92,9 +87,6 @@ public class EmployeeControllerTestsWebMvc {
                 delete("/employee/{id}", employee.getId()))
                 .andExpect(status().isOk());
 
-//        verify(employeeService, times(1)).findById(employee.getId());
-//        verify(employeeService, times(1)).deleteById(employee.getId());
-//        verifyNoMoreInteractions(employeeService);
     }
     @Test
     void findByIdExc() throws Exception {

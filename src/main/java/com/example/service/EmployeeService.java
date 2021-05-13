@@ -38,7 +38,7 @@ public class EmployeeService {
 		}
 	}
 	public List<Employee> findAll() {
-		List<Employee> result = (List<Employee>) employeeRepository.findAll();
+		List<Employee> result = employeeRepository.findAll();
 		if (result.size() > 0) {
 			return result;
 		} else {
